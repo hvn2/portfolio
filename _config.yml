@@ -2,4 +2,4 @@ title: Han Van Nguyen
 logo:
 #description: text below image
 show_downloads: true
-them: minimal
+theme: jekyll-theme-minimal
