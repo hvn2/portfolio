@@ -5,7 +5,7 @@ author: Han Van Nguyen
 email: hvn2@hi.is  # Use your professional email from CV
 url: "https://hvn2.github.io"  # Replace with your GitHub Pages URL
 baseurl: ""  # Leave empty unless hosting in a subdirectory
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minima
 show_downloads: false
 
 # Social links (only include active ones)
