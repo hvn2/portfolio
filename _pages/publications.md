@@ -2,10 +2,6 @@
 layout: default
 title: Publications
 ---
----
-layout: default
-title: Publications
----
 
 ## Publications
 

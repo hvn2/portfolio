@@ -2,10 +2,6 @@
 layout: default
 title: Projects
 ---
----
-layout: default
-title: Projects
----
 ## Key Projects  
 ### Pot Liquid Levels Measurement System  
 *Visk ehf., 09/2024 – 04/2025*  
