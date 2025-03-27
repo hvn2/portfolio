@@ -1,37 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title }}</title>
-    {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body>
-    <div class="container">
-      <!-- Left Sidebar -->
-      <aside [Your resume content will go here.]aside class="sidebar">
-        <img src="{{ site.logo | relative_url }}" alt="Han Van Nguyen" class="profile-pic">
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
-        <nav>
-          <ul>
-            {% for item in site.nav %}
-              <li><a href="{{ item.url | relative_url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-      </aside>
-
-      <!-- Right Content Area -->
-      <main class="content">
-        <h2>{{ page.title }}</h2>
-        {{ content }}
-      </main>
-    </div>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
