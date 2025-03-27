@@ -23,15 +23,13 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        header img {
-          border-radius: 50%;
-      }
-      
-      /* Make navigation links bigger */
-      header nav ul li a {
-          font-size: 1.2em;
-          padding: 10px 15px;
-      }   
+        <nav>
+          <ul>
+            {% for item in site.nav %}
+              <li><a href="{{ item.url | relative_url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
 
         {% if site.show_downloads %}
         <ul class="downloads">
@@ -40,13 +38,6 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        <nav>
-          <ul>
-            {% for item in site.nav %}
-              <li><a href="{{ item.url | relative_url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
       </header>
       <section>
 
