@@ -2,3 +2,15 @@
 ---
 
 @import "jekyll-theme-minimal";
+// Custom styles
+
+// Make the logo rounded
+header img {
+    border-radius: 50%;
+  }
+  
+  // Make navigation links bigger
+  header nav ul li a {
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
