@@ -1,23 +1,33 @@
-title: Han Van Nguyen
-logo: assets/images/han.jpg
-description: Electrical and computer engineer
+title: Han Van Nguyen - Portfolio
+logo: /assets/images/han.jpg
+description: Electrical and Computer Engineer | AI & Software Engineering Expert
 author: Han Van Nguyen
-email: han.van.nguyen@gmail.com
-social:
-  twitter: hanvannguyen
-  github: hanvannguyen
-  linkedin: hanvannguyen
-  facebook: hanvannguyen
-  instagram: hanvannguyen
-  youtube: hanvannguyen
-  dribbble: hanvannguyen
-  behance: hanvannguyen
-  pinterest: hanvannguyen
-  stackoverflow: hanvannguyen
-  medium: hanvannguyen
-  rss: hanvanng
-show_downloads: false
+email: hvn2@hi.is  # Use your professional email from CV
+url: "https://hvn2.github.io"  # Replace with your GitHub Pages URL
+baseurl: ""  # Leave empty unless hosting in a subdirectory
 theme: jekyll-theme-minimal
-# Optional additional metadata:
-# url: "https://yourdomain.com"
-# baseurl: ""
+show_downloads: false
+
+# Social links (only include active ones)
+social:
+  linkedin: han-van-nguyen-b5b97374  # Updated to match CV
+  github: hvn2                       # Updated to match CV
+  # Add others only if you actively use them (e.g., Twitter, Medium)
+
+# Navigation menu
+nav:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: CV
+    url: /cv/
+  - name: Projects
+    url: /projects/
+  - name: Contact
+    url: /contact/
+  # - name: Blog
+  #   url: /blog/  # Uncomment if you add a blog
+
+# Optional: Google Analytics (for tracking visitors)
+# google_analytics: UA-XXXXX-Y  # Replace with your tracking ID
