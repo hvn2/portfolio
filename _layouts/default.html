@@ -15,43 +15,40 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
+        <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: 'Han Van Nguyen' }}</a></h1>
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{ site.logo | relative_url }}" alt="Han Van Nguyen" style="width:64px; border-radius:50%;" />
         {% endif %}
+        <p>{{ site.description | default: 'Electrical and Computer Engineer | AI & Software Engineering Expert' }}</p>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+        <!-- Dynamic Navigation from _config.yml -->
+        {% if site.nav %}
         <nav>
           <ul>
-            <li><a href="{{ "/" | absolute_url }}">Home</a></li>
-            <li><a href="{{ "/about.html" | absolute_url }}">About</a></li>
-            <li><a href="{{ "/projects.html" | absolute_url }}">Projects</a></li>
-            <li><a href="{{ "/blogs.html" | absolute_url }}">Blogs</a></li>
+            {% for item in site.nav %}
+              <li><a href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
+            {% endfor %}
           </ul>
         </nav>
+        {% endif %}
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        <!-- Social Links -->
+        {% if site.social %}
+        <ul class="social">
+          {% if site.social.linkedin %}<li><a href="https://linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>{% endif %}
+          {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>{% endif %}
+          <!-- Add more social links as needed -->
         </ul>
         {% endif %}
       </header>
       <section>
-
-      {{ content }}
-
+        {{ content }}
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <!-- <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
+        <p>&copy; {{ site.author | default: 'Han Van Nguyen' }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a></small></p>
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
