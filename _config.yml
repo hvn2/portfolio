@@ -15,3 +15,9 @@ google_analytics:
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-seo-tag
+
+# Define _pages as a collection
+collections:
+  pages:
+    output: true
+    permalink: /:name/  # Generates /resume/, /projects/, etc.
