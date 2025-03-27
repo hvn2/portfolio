@@ -1,5 +1,22 @@
 title: Han Van Nguyen
-logo:
-#description: text below image
+logo: assets/images/han.jpg
+description: Electrical and computer engineer
+author: Han Van Nguyen
+email: han.van.nguyen@gmail.com
+social:
+  twitter: hanvannguyen
+  github: hanvannguyen
+  linkedin: hanvannguyen
+  facebook: hanvannguyen
+  instagram: hanvannguyen
+  youtube: hanvannguyen
+  dribbble: hanvannguyen
+  behance: hanvannguyen
+  pinterest: hanvannguyen
+  stackoverflow: hanvannguyen
+  medium: hanvannguyen
+  facebook: hanvannguyen
+  youtube: hanvannguyen
+  rss: hanvanng
 show_downloads: false
 theme: jekyll-theme-minimal
