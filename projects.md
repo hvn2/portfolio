@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Projects
-permalink: /projects/
 ---
 ## Key Projects  
 ### Pot Liquid Levels Measurement System  
