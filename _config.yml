@@ -15,8 +15,9 @@ social:
   pinterest: hanvannguyen
   stackoverflow: hanvannguyen
   medium: hanvannguyen
-  facebook: hanvannguyen
-  youtube: hanvannguyen
   rss: hanvanng
 show_downloads: false
 theme: jekyll-theme-minimal
+# Optional additional metadata:
+# url: "https://yourdomain.com"
+# baseurl: ""
