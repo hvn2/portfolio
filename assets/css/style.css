@@ -2,6 +2,12 @@
 body, h1, h2, p, ul { margin: 0; padding: 0; }
 ul { list-style: none; }
 
+/* Set a modern font stack */
+body {
+  font-family: 'Roboto', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+}
+
 /* Container for Two Columns */
 .container {
   display: flex;
