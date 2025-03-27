@@ -6,11 +6,11 @@ nav:
   - name: Home
     url: "/"
   - name: Resume
-    url: "/resume/"
+    url: "_pages/resume/"
   - name: Projects
-    url: "/projects/"
+    url: "_pages/projects/"
   - name: Publications
-    url: "/publications/"
+    url: "/_pages/publications/"
 google_analytics:
 theme: jekyll-theme-minimal
 plugins:
