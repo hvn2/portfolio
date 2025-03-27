@@ -1,6 +1,23 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Han Van Nguyen
+logo: "/assets/img/han.jpg"
+description: An Electrical and Computer Engineer
+show_downloads: false
+nav:
+  - name: Home
+    url: "/"
+  - name: Resume
+    url: "/resume/"
+  - name: Projects
+    url: "/projects/"
+  - name: Publications
+    url: "/publications/"
 google_analytics:
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag
+
+# Define _pages as a collection
+collections:
+  pages:
+    output: true
+    permalink: /:name/  # Generates /resume/, /projects/, etc.
