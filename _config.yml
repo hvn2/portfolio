@@ -1,11 +1,17 @@
 title: Han Van Nguyen
 logo: "/assets/img/han.jpg"
-description: An Electrical and Computer Engineer.
+description: An Electrical and Computer Engineer
 show_downloads: false
 nav:
-  - Home: "/"
-  - About: "/about"
-  - Projects: "/projects"
-  - Contact: "/contact"
+  - name: Home
+    url: "/"
+  - name: Resume
+    url: "/resume/"
+  - name: Projects
+    url: "/projects/"
+  - name: Publications
+    url: "/publications/"
 google_analytics:
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag

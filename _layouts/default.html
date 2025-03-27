@@ -1,54 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
+    <title>{{ page.title | default: site.title }}</title>
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: 'Han Van Nguyen' }}</a></h1>
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Han Van Nguyen" style="width:64px; border-radius:50%;" />
-        {% endif %}
-        <p>{{ site.description | default: 'Electrical and Computer Engineer | AI & Software Engineering Expert' }}</p>
-
-        <!-- Dynamic Navigation from _config.yml -->
-        {% if site.nav %}
+    <div class="container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <img src="{{ site.logo | relative_url }}" alt="Han Van Nguyen" class="profile-pic">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
         <nav>
           <ul>
             {% for item in site.nav %}
-              <li><a href="{{ item.url | absolute_url }}">{{ item.name }}</a></li>
+              <li><a href="{{ item.url | relative_url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.name }}</a></li>
             {% endfor %}
           </ul>
         </nav>
-        {% endif %}
+      </aside>
 
-        <!-- Social Links -->
-        {% if site.social %}
-        <ul class="social">
-          {% if site.social.linkedin %}<li><a href="https://linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>{% endif %}
-          {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>{% endif %}
-          <!-- Add more social links as needed -->
-        </ul>
-        {% endif %}
-      </header>
-      <section>
+      <!-- Right Content Area -->
+      <main class="content">
+        <h2>{{ page.title }}</h2>
         {{ content }}
-      </section>
-      <footer>
-        <p>&copy; {{ site.author | default: 'Han Van Nguyen' }} | <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a></small></p>
-      </footer>
+      </main>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
