@@ -1,13 +1,6 @@
 ---
 layout: default
 ---
-
-## Welcome to another page
-
-_yay_
-
-[back](./)
-
 # Han Van Nguyen  
 **Electrical and Computer Engineer**  
 Skipholt 51, 105 Reykjavik, Iceland  
@@ -112,3 +105,5 @@ Email: [mou@hi.is](mailto:mou@hi.is) | Phone: 525 5281
 **Eiríkur Sigurðsson**  
 Head of Communications, Icelandic Intellectual Property Office  
 Email: [eirikur.sig@gmail.com](mailto:eirikur.sig@gmail.com) | Phone: 8595117  
+
+[back](./)
