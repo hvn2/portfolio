@@ -200,7 +200,7 @@ Logistic Regression là bài toán cơ bản thứ 2 của ML/DL, đây là bài
   - Bộ dữ liệu MNIST, CIFAR10,..đầu vào là là ảnh các chữ số viết tay đen trắng (MNIST), hoặc các hình ảnh màu khác (CIFAR10), đầu ra là các các chữ số tương ứng với con số trong ảnh MNIST, hoặc các con số đại diện cho một lớp hình ảnh nào đó trong ảnh CIFAR10 (ví dụ số 6 là đại diện cho xe tải- truck)
 
 <div class="imgcap">
- <img src ="{{'/assets/images/bai-03/logis_reg.png' | relative url}}" width="300">
+ <img src ="{{"/assets/images/bai-03/logis_reg.png" | relative url}}" width="300">
  <div class = "thecap">Hình 3. Ví dụ logistic với đầu ra 2 lớp</div>
 </div>
 
