@@ -17,9 +17,11 @@
     <script>
       MathJax = {
         tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],  // Support $...$ and \(...\)
-          displayMath: [['$$', '$$'], ['\\[', '\\]']],  // Support $$...$$ and \[...\]
-          processEscapes: true
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true,
+          tags: 'ams',  // Enable automatic equation numbering
+          packages: {'[+]': ['ams']}  // Load the AMS package for \label and \ref
         },
         options: {
           skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
