@@ -37,7 +37,7 @@ ylabel('Magnitude')
 ~~~~
 Đây là đồ thị
 
-![hinh1](/assets/images/bai-01/noisysinwave.png)  
+![hinh1]({{ "/assets/images/bai-01/noisysinwave.png" | relative_url }}) 
 Hình 1. Hình dạng tín hiệu trong miền thời gian
 
 ![hinh2](/assets//images/bai-01/fftsinwave.png)  
