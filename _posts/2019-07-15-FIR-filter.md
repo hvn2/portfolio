@@ -22,7 +22,7 @@ Sử dụng biến đổi ngược DTFT sẽ tìm được đáp ứng xung có 
 $$h[n]=\frac{sin(n\omega _c)}{n\pi}$$
 
 Đồ thị đáp ứng tần số và đáp ứng xung như hình dưới đây
-![hinh1](images/bai-02/lpfresponses.png)  
+![hinh1]({{"/assets/images/bai-02/lpfresponses.png"}} | relative_url)  
 Hình 1. Đáp ứng tần số và đáp ứng xung của bộ lọc thông thấp lý tưởng.
 
 Từ đồ thị ở Hình 1 có thể thấy đáp ứng xung của bộ lọc thông thấp lý tưởng là không nhân quả (khác 0 với những giá trị $n$ nhỏ hơn 0) và có chiều dài vô hạn, do đó không thể thực hiện được về mặt vật lý. Để hiện thực được bộ lọc thì chúng ta phải thay đổi một chút đối với đáp ứng xung:
@@ -33,7 +33,7 @@ Khi  thực hiện 2 việc này sẽ dẫn đến 2 vấn đề:
 - Giới hạn chiều dài đáp ứng xung làm cho đáp ứng tần số không còn dạng lý tưởng như hình trên nữa mà sẽ bị méo mó đi. Cụ thể là ở vùng dải thông và dải chắn không còn bằng phẳng mà có độ gợn sóng, biên độ giữa phần dải thông và dải chắn không thể thay đổi một cách đột ngột (từ 1 về 0) được mà phải có một sự chuyển tiếp dần dần. Việc giới hạn chiều dài đáp ứng xung giống như là nhân với đáp ứng xung với một cửa sổ có chiều dài hữu hạn - trong trường hợp này là cửa sổ hình chữ nhật có biên độ bằng 1. Hình dạng, kích thước của sổ sẽ ảnh hưởng đến các thông số (độ gợn sóng, thời gian chuyển tiếp) của bộ lọc. Đặc điểm của các loại cửa sổ sẽ đề cập đến ở phần sau của bài. Các đặc tả của bộ lọc thực tế được cho như ở Hình 2. Chính vì điều này nên giả thiết ở ví dụ bên trên là chưa đủ khi thiết kế bộ lọc thực tế, cần phải có những chỉ tiêu đặc tả bộ lọc như ở Hình 2 mới đủ để thiết kế, chúng ta sẽ quay lại điều này ở phần cuối của bài.
 - Dịch $n_0$ mẫu trong miền thời gian thì tương ứng trong miền tần số sẽ là $h[n-n_0] \overset{\mathcal{DTFT}}{\leftrightarrow} e^{-j\omega n_0}H(e^{j\omega})$. Nghĩa là đã làm dịch pha đi $n_0$. Điều này dẫn đến ràng buộc là bộ lọc có pha tuyến tính (pha là hàm số bậc nhất của $\omega$). Quá trình dịch này không làm ảnh hưởng đến đáp ứng biên độ - tần số (magnitude response, tức là $\vert H(e^{j\omega}) \vert$, mà chỉ ảnh hưởng đến đáp ứng pha, cụ thể là độ trễ nhóm (group delay). Độ trễ nhóm đặc trưng cho độ trễ của tín hiệu có tần số khác nhau khi đi qua bộ lọc. Tuy nhiên trong phần lớn trường hợp thì ảnh hưởng của pha không quan trọng.
 
-![hinh2](images/bai-02/thamsoboloc.png)  
+![hinh2]({{"/assets/images/bai-02/thamsoboloc.png"}} | relative_url)  
 Hình 2. Các tham số của bộ lọc
 
 Với những ràng buộc như trên thì bộ lọc của chúng ta cần thiết kế sẽ giới hạn lại là bộ lọc số có đáp ứng xung chiều dài hữu hạn và pha tuyến tính (bộ lọc FIR pha tuyến tính). Đáp ứng tần số của bộ lọc $H(e^{j\omega})$ nói chung là một số phức và nếu $h[n]$ là thực thì đáp ứng biên độ - tần số (Magnitude response) $\vert H(e^{j\omega}) \vert$ là hàm chẵn, đáp ứng pha - tần số $arg(H(e^{j\omega})$ là một hàm lẻ. Đáp ứng tần số có thể biểu diễn dưới dạng độ lớn và pha (biểu diễn số phức dưới dạng tọa độ cực): $H(e)^{j\omega}=A(e^{j\omega})e^{j\theta(\omega)}$ với $\theta(\omega)=\beta-\alpha \omega$ là pha tuyến tính, $A(e^{j\omega})$ là một số thực có thể âm hoặc dương. Với bộ lọc FIR pha tuyến tính người ta chứng minh được có 4 loại :
@@ -56,7 +56,7 @@ Trong miền tần số phép nhân thành phép tích chập (chưa dịch)
 $$ H(e^{j\omega}) = H_d(e^{j\omega}) \ast W(e^{j\omega}) =\frac{1}{2\pi}\int_{-\pi}^{\pi}W(e^{j\omega})H_d(e^{j(\omega - \lambda)})d\lambda$$
 
 Hình vẽ dưới đây minh họa ảnh phép tích chập
-![hinh3](images/bai-02/window.png)  
+![hinh3]({{"/assets/images/bai-02/window.png"}} | relative_url)  
 Hình 3. Tích chập trong miền tần số
 
 Dựa vào Hình 3 và tính chất của các loại cửa sổ, rút ra một số nhận xét như sau:
@@ -68,7 +68,7 @@ Dựa vào Hình 3 và tính chất của các loại cửa sổ, rút ra một 
 
 Như vậy rõ ràng lựa chọn cửa sổ như thế nào sẽ ảnh hưởng đến chất lượng của bộ lọc. Với mong muốn bộ lọc có đáp ứng xấp xỉ tốt nhất với đáp ứng của bộ lọc lý tưởng, chúng ta phải chọn cửa sổ với hình dạng và chiều dài N sao cho độ rộng búp chính rất nhỏ và biên độ búp phụ rất nhỏ và bằng phẳng. Các loại cửa sổ và tính chất của nó đã được nghiên cứu và tổng kết ở các giáo trình Xử lý tín hiệu số, một số loại cửa sổ phổ biến và tính chất của nó được cho như Bảng 1 dưới đây.
 
-![bang1](images/bai-02/windowproperties.png)  
+![bang1]({{"/assets/images/bai-02/windowproperties.png"}| relative_url})  
 Bảng 1. Tính chất của các loại cửa sổ (cửa sổ tam giác còn gọi là cửa sổ Bartlett)
 
 Sau khi đã phân tích tính chất của bộ lọc FIR pha tuyến tính và các loại cửa sổ (hi vọng chưa nản khi đọc đến phần này). Chúng ta sẽ quay lại nhiệm vụ chính đặt ra ở đầu bài. Với những gì đã phân tích, chúng ta sẽ phát biểu lại bài toán một cách chặt chẽ như sau:  
@@ -199,7 +199,7 @@ $$ \omega_p = 0.2\pi, R_p=0.25 dB \\
 Lưu ý trong đoạn code trên có tính suy hao tối thiểu ở dải chắn $A_s$ và độ gợn sóng ở dải thông $R_p$, cả hai thông số này đều thỏa mãn điều kiện thiết kế nên thiết kế ở trên đạt yêu cầu. Giả sử nếu $R_p$ không đạt yêu cầu thì có thể thử loại cửa sổ khác (lưu ý: Độ gợn sóng phụ thuộc vào độ gợn sóng của các búp sóng phụ của cửa sổ).
 Kết quả thiết kế như hình 4.
 
-![hinh4](/assets/images/bai-02/fir_example.png)  
+![hinh4]({{"/assets/images/bai-02/fir_example.png"} | relative_url})  
 Hình 4. Kết quả thiết kế
 $$A_s=52dB, \ R_p = 0.0394 dB$$
 
