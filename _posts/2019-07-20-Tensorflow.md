@@ -139,7 +139,7 @@ y = [49, 50, 51,  54, 58, 59, 60, 62, 63, 64, 66, 67, 68]
 Đồ thị của nó như hình 2
 
 <div class="imgcap">
- <img src ="{{'/assets/images/bai-03/linreg.png' | relative url}}" align = "center">
+ <img src ="{{'/assets/images/bai-03/linreg.png' | relative_url}}" align = "center">
  <div class = "thecap">Hình 2. Đồ thị liên hệ x và y</div>
 </div>
 
@@ -200,12 +200,12 @@ Logistic Regression là bài toán cơ bản thứ 2 của ML/DL, đây là bài
   - Bộ dữ liệu MNIST, CIFAR10,..đầu vào là là ảnh các chữ số viết tay đen trắng (MNIST), hoặc các hình ảnh màu khác (CIFAR10), đầu ra là các các chữ số tương ứng với con số trong ảnh MNIST, hoặc các con số đại diện cho một lớp hình ảnh nào đó trong ảnh CIFAR10 (ví dụ số 6 là đại diện cho xe tải- truck)
 
 <div class="imgcap">
- <img src ="{{"/assets/images/bai-03/logis_reg.png" | relative url}}" width="300">
+ <img src ="{{'/assets/images/bai-03/logis_reg.png' | relative_url}}" width="300">
  <div class = "thecap">Hình 3. Ví dụ logistic với đầu ra 2 lớp</div>
 </div>
 
 <div class="imgcap">
- <img src ="{{'/assets/images/bai-03/Iris.png' | relative url}}" width="300">
+ <img src ="{{'/assets/images/bai-03/Iris.png' | relative_url}}" width="300">
  <div class = "thecap">Hình 4. Một phần bộ dữ liệu Iris</div>
 </div>
 
