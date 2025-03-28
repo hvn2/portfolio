@@ -68,7 +68,7 @@ Dựa vào Hình 3 và tính chất của các loại cửa sổ, rút ra một 
 
 Như vậy rõ ràng lựa chọn cửa sổ như thế nào sẽ ảnh hưởng đến chất lượng của bộ lọc. Với mong muốn bộ lọc có đáp ứng xấp xỉ tốt nhất với đáp ứng của bộ lọc lý tưởng, chúng ta phải chọn cửa sổ với hình dạng và chiều dài N sao cho độ rộng búp chính rất nhỏ và biên độ búp phụ rất nhỏ và bằng phẳng. Các loại cửa sổ và tính chất của nó đã được nghiên cứu và tổng kết ở các giáo trình Xử lý tín hiệu số, một số loại cửa sổ phổ biến và tính chất của nó được cho như Bảng 1 dưới đây.
 
-![bang1]({{"/assets/images/bai-02/windowproperties.png"| relative_url}})  
+![bang1]({{"/assets/images/bai-02/windowproperties.png" | relative_url}})  
 Bảng 1. Tính chất của các loại cửa sổ (cửa sổ tam giác còn gọi là cửa sổ Bartlett)
 
 Sau khi đã phân tích tính chất của bộ lọc FIR pha tuyến tính và các loại cửa sổ (hi vọng chưa nản khi đọc đến phần này). Chúng ta sẽ quay lại nhiệm vụ chính đặt ra ở đầu bài. Với những gì đã phân tích, chúng ta sẽ phát biểu lại bài toán một cách chặt chẽ như sau:  
