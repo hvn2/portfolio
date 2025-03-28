@@ -199,7 +199,7 @@ $$ \omega_p = 0.2\pi, R_p=0.25 dB \\
 Lưu ý trong đoạn code trên có tính suy hao tối thiểu ở dải chắn $A_s$ và độ gợn sóng ở dải thông $R_p$, cả hai thông số này đều thỏa mãn điều kiện thiết kế nên thiết kế ở trên đạt yêu cầu. Giả sử nếu $R_p$ không đạt yêu cầu thì có thể thử loại cửa sổ khác (lưu ý: Độ gợn sóng phụ thuộc vào độ gợn sóng của các búp sóng phụ của cửa sổ).
 Kết quả thiết kế như hình 4.
 
-![hinh4]({{"/assets/images/bai-02/fir_example.png"} | relative_url})  
+![hinh4]({{"/assets/images/bai-02/fir_example.png" | relative_url}})  
 Hình 4. Kết quả thiết kế
 $$A_s=52dB, \ R_p = 0.0394 dB$$
 
