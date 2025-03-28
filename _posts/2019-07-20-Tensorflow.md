@@ -33,7 +33,7 @@ print(y)
 ```
 
 <div class="imgcap">
- <img src ="{{'/assets/images/bai-03/tfgraph.png' | relative_url }}" align = "center">
+ <img src ="{{'/assets/images/bai-03/tfgraph.png' | relative_url}}" align = "center">
  <div class = "thecap">Hình 1. tf.grahp()</div>
 </div>
 
