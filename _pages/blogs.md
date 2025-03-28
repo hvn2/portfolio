@@ -5,7 +5,7 @@ title: Blogs
 
 ## Blogs
 
-Here are my latest articles on topics like AI, remote sensing, and computer engineering:
+Check out my blogs and tutorials on image processing, machine leanring and deep learning (Some of them are in Vietnamese):
 
 <ul class="post-list">
   {% for post in site.posts %}
