@@ -41,3 +41,5 @@ Below is a selection of my published works in the fields of electrical and compu
 - Citation counts are approximate based on your Google Scholar profile as of March 27, 2025.
 - My research primarily focuses on unsupervised deep learning techniques for remote sensing applications, with contributions to image denoising, fusion, and hyperspectral unmixing.
 - For full-text access or additional publications, please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=IayYyNIAAAAJ&hl=en).
+
+[back](./)

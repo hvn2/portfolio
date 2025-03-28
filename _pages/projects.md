@@ -17,3 +17,5 @@ title: Projects
 *University of Iceland, 02/2019 – 12/2023*  
 - Created unsupervised deep learning algorithms for image denoising and fusion.  
 - *Outcome:* Published 5 Q1 journal articles and 6 conference papers ([Google Scholar](https://scholar.google.com/citations?user=IayYyNIAAAAJ&hl=vi)).
+
+[back](./)
